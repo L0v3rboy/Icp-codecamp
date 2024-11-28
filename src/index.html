@@ -1,5 +1,316 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My IT Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Comic+Neue:wght@700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Baloo Bhaijaan 2", sans-serif;
+      font-family: "Comic Neue", sans-serif;
+      font-family: "Montserrat", sans-serif;
+    }
+    body {
+      background-image: url(img/bg2.jpg);
+      background-blend-mode: darken;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .logo {
+      color: #eeeded;
+      text-shadow: 10px 1px 10px rgba(0, 0, 0, 0.5);
+      font-size: 35px;
+      margin-left: 50px;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    .logo2 {
+      float: left;
+      margin-left: -60px;
+      height: 45px;
+      width: 40px;
+    }
+    .navbar {
+      background-color: #2b2a4c;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo img {
+      width: 50px; /* Adjust the width as needed */
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin-right: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Add more styles for the sections as needed */
+    section {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 30px; /* Adjust the width as needed */
+      height: auto;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #2b2a4c;
+      background-blend-mode: darken;
+      color: #fff;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0%;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 30px; /* Adjust the width as needed */
+      height: auto;
+      border-radius: 50%;
+    }
+    .main-content h1 {
+      font-size: 100px;
+      color: #eee2de;
+      margin-top: 90px;
+      margin-left: 10%;
+      font-family: "Comic Neue", sans-serif;
+    }
+    .main-content h3 {
+      font-family: "Comic Neue", sans-serif;
+      color: #eee2de;
+      font-size: 25px;
+      margin-left: 10%;
+    }
+    .main-content p {
+      margin-left: 10%;
+      color: #eee2de;
+      font-size: 25px;
+      margin-top: 20px;
+      margin-right: 35%;
+      font-family: "Comic Neue", sans-serif;
+    }
+    button {
+      margin-left: 10%;
+      margin-top: 30px;
+      border: none;
+      padding: 10px;
+      width: 11%;
+      background-color: #ea906c;
+      border: 1px solid black;
+      border-radius: 12px;
+      transition: 0.5s;
+      text-transform: uppercase;
+      font-family: "Source Code Pro", monospace;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #eee2de;
+    }
+    .logo3 img {
+      max-width: 450px;
+      top: 15%;
+      left: 57%;
+      border-radius: 100%;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .logo3:hover img {
+      transform: scale(1.1); /* Increase size on hover */
+    }
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background: black;
+      transition: opacity 1000s, visibility 1.95s;
+      z-index: 999;
+    }
+    .text {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .loading {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader--hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loading .line-box {
+      padding: 2px;
+      width: 40%;
+      height: 20px;
+      border: 2px solid #0d0daa;
+      border-radius: 20px;
+    }
+
+    .loading .line-box .line {
+      height: 20px;
+      border-radius: 20px;
+      background: white;
+      animation: loading 2s forwards cubic-bezier(0, 0, 0, 0);
+    }
+    img {
+      width: 50%;
+    }
+
+    @keyframes loading {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+
+      loader.classList.add("loader--hidden");
+
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+      });
+    });
+  </script>
+
+  <body>
+    <div class="loader">
+      <div class="text">
+        <h1>Loading...</h1>
+      </div>
+      <div class="loading">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <h2 class="logo">
+          <img src="img/logo.jpg" class="logo2" /> BI<span>BIM</span>
+        </h2>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="work.html">Sample Work</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <h1>BIBIM</h1>
+      <h3>"CREATIVE, SMART, INNOVATIVE"</h3>
+      <p>
+        I came up with this name because it came <br />
+        from the love of my life. I really treasure this nickname
+      </p>
+    </div>
+    <div class="logo3">
+      <img src="img/logo.jpg" />
+    </div>
+    <a href="Contact.html"> <button>CONTACT ME</button> </a>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://web.facebook.com/ailvin.gamana" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/yourusername" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:your.email@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://ailvingamana.jobs180.com/" target="_blank"
+          ><i class="fa-solid fa-briefcase"></i>
+        </a>
+      </div>
+      <p class="footer-p">&copy; 2024 Ailvin Gamana. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
